@@ -9,23 +9,15 @@
 #include "frequency.h"
 #include "esp_timer.h"
 #include "ssd1306.h"
+#include "screen.h"
+#include "states.h"
 #include "bitmap_img.h"
 
 //Debug mode
 #define DEBUG
 
-//Stati della macchina
-#define INIT 0
-#define WORK 1
-#define ERROR 2
-
+//General state
 static uint8_t sys_state;
-
-//Fasi del ciclo di funzionamento
-#define WAIT 0
-#define DELAY 1
-#define DISCHARGE 2
-#define CHARGE 3
 
 //Struct unica che contiene tutte le informazioni di un oggetto
 typedef struct{
@@ -220,6 +212,78 @@ void tractor_input_handler(void *pvParameters) {
 
 SSD1306_t screen1, screen2;
 
+int8_t x_pos_side (uint8_t side, uint8_t x_offset, uint8_t width) {
+    if(side == SX_SIDE)
+        return x_offset;
+    else if(side == DX_SIDE)
+        return (128 - x_offset - width);
+    else
+        return 0;
+}
+
+void show_drawer_info(SSD1306_t * screen, uint8_t state, uint8_t side) {
+    uint8_t x_pos = 0, y_pos = 0;
+    int8_t sign = 0;
+
+    if(side == SX_SIDE) 
+        x_pos = SX_X_POS;
+    else if(side == DX_SIDE)
+        x_pos = DX_X_POS;
+
+    if(side == SX_SIDE) 
+        y_pos = SX_Y_POS;
+    else if(side == DX_SIDE)
+        y_pos = DX_Y_POS;
+    
+
+    switch (state)
+    {
+    case WAIT:
+        ssd1306_bitmaps(
+                screen,
+                x_pos, 
+                y_pos, 
+                drawer_empty.array, 
+                drawer_empty.width, 
+                drawer_empty.height, 
+                false);
+            
+        ssd1306_bitmaps(
+                screen,
+                x_pos_side(side, 4 + drawer_empty.width, automatic.width), 
+                y_pos, 
+                automatic.array, 
+                automatic.width, 
+                automatic.height, 
+                false);
+        
+        ssd1306_bitmaps(
+                screen,
+                x_pos_side(side, 4 + drawer_empty.width, photocell_on.width), 
+                y_pos + 32, 
+                photocell_on.array, 
+                photocell_on.width, 
+                photocell_on.height, 
+                false);
+        break;
+    
+    case DELAY:
+        
+        break;
+
+    case CHARGE:
+        
+        break;
+
+    case DISCHARGE:
+        
+        break;
+    
+    default:
+        break;
+    }
+}
+
 void manage_screens(void *pvParameters) {
     ssd1306_clear_screen(&screen1, false);
     ssd1306_clear_screen(&screen2, false);
@@ -252,7 +316,8 @@ void manage_screens(void *pvParameters) {
             break;
         
         case WORK:
-            
+            show_drawer_info(&screen1, drawer_sx.state, SX_SIDE);
+            show_drawer_info(&screen2, drawer_dx.state, DX_SIDE);
             break;
         
         case ERROR:

@@ -1,1 +1,1 @@
-idf_component_register(SRCS "frequency.c" "gpio.c" "main.c" INCLUDE_DIRS ".")
+idf_component_register(SRCS "screen.c" "frequency.c" "gpio.c" "main.c" INCLUDE_DIRS ".")
