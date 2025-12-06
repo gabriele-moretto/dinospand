@@ -1,3 +1,0 @@
-# DinoSpand
-
-Firmware development
