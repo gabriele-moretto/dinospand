@@ -2,7 +2,7 @@
 
 ## Hardware
 
-![Front](https://github.com/[username]/[reponame]/pcb/img/front.jpg?raw=true)
-![Back](https://github.com/[username]/[reponame]/pcb/img/back.jpg?raw=true)
+![Front](https://github.com/gabriele-moretto/dinospand/pcb/img/front.jpg?raw=true)
+![Back](https://github.com/gabriele-moretto/dinospand/pcb/img/back.jpg?raw=true)
 
 ## Firmware
