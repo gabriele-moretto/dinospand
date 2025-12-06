@@ -1,0 +1,20 @@
+MOSFET:
+ - https://www.mouser.it/ProductDetail/Nexperia/NX138BKR?qs=5ptrxOxu%252BRaTJnPpG96opA%3D%3D
+
+Relè:
+ - https://www.mouser.it/ProductDetail/KEMET/EE2-5NU?qs=iaWy59%2Fd4KDPVAG7asNi4Q%3D%3D
+
+ESP32:
+ - https://www.mouser.it/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N4?qs=Li%252BoUPsLEnsO%2FkiJOUK0FQ%3D%3D
+
+LDO:
+ - https://www.mouser.it/ProductDetail/Analog-Devices/LT1963AEST-3.3TRPBF?qs=ytflclh7QUV8Z8cL2h9kog%3D%3D
+
+Zener 3V3:
+ - https://www.mouser.it/ProductDetail/onsemi/MM3Z3V3ST1G?qs=HVbQlW5zcXUr40rey9MAng%3D%3D
+
+Diodi relè:
+ - https://www.mouser.it/ProductDetail/Panjit/BAV21WS_R1_00001?qs=sPbYRqrBIVk4YpoWV%2FcfMQ%3D%3D
+
+Connettore interno:
+ - https://www.mouser.it/ProductDetail/TE-Connectivity-AMP/4-794619-6?qs=RxTKX8ffeSFgd9Qko7wakA%3D%3D
