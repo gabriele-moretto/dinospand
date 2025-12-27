@@ -1,0 +1,2 @@
+source /home/gambalo/DinoSpand_v1.0/build/bootloader/gdbinit/symbols
+source /home/gambalo/DinoSpand_v1.0/build/bootloader/gdbinit/connect

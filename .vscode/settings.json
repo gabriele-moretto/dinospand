@@ -1,0 +1,28 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/gambalo/esp/esp-idf",
+  "idf.pythonInstallPath": "/home/gambalo/.espressif/python_env/idf5.4_py3.13_env/bin/python",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.port": "/dev/ttyACM0",
+  "idf.toolsPath": "/home/gambalo/.espressif",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "clangd.path": "/home/gambalo/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=/home/gambalo/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
+    "--compile-commands-dir=${workspaceFolder}/build"
+  ],
+  "files.associations": {
+    "freertosconfig.h": "c",
+    "frequency.h": "c",
+    "string.h": "c",
+    "font8x8_basic.h": "c",
+    "i2c_master.h": "c"
+  },
+  "idf.flashType": "UART",
+  "cmake.sourceDirectory": "/home/gambalo/Documents/DinoSpand_v1.0/firmware"
+}

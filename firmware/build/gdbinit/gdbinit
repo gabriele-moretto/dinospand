@@ -1,0 +1,2 @@
+source /home/gambalo/DinoSpand_v1.0/build/gdbinit/symbols
+source /home/gambalo/DinoSpand_v1.0/build/gdbinit/connect
