@@ -4548,7 +4548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+5V"
 			(at 104.14 119.38 0)
 			(effects
 				(font
