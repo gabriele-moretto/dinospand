@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "DinoSpand_v1.0",
-    "project_version":    "fe160a9",
+    "project_version":    "24f8ddd-dirty",
     "project_path":       "/home/gambalo/Documents/DinoSpand_v1.0/firmware",
     "idf_path":           "/home/gambalo/esp/esp-idf",
     "build_dir":          "/home/gambalo/Documents/DinoSpand_v1.0/build",
