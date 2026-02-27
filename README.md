@@ -11,3 +11,15 @@ The microcontroller used is an ESP32-s3, which is useful for the right number of
 ![Back](https://github.com/gabriele-moretto/dinospand/blob/main/pcb/img/back.jpg)
 
 ## Firmware
+
+## PCBWay production
+I had a great experience working with **PCBWay** through their sponsorship program. They supported my project by manufacturing and shipping a fully assembled PCB, which allowed me to turn my design into a real, working device.
+
+**Key points:**
+- PCB manufacturing
+- High-quality fabrication and assembly
+- Easy ordering process
+- Fast production and shipping
+- Reliable results
+
+Many thanks to PCBWay for supporting this project!
