@@ -12,7 +12,7 @@ The microcontroller used is an ESP32-s3, which is useful for the right number of
 
 ## Firmware
 
-## PCBWay production
+## [PCBWay](https://www.pcbway.com/) production
 I had a great experience working with **PCBWay** through their sponsorship program. They supported my project by manufacturing and shipping a fully assembled PCB, which allowed me to turn my design into a real, working device.
 
 **Key points:**
